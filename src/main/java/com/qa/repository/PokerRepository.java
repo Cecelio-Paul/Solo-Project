@@ -1,14 +1,7 @@
 package com.qa.repository;
 
-public class PokerRepository {
-}
+import com.qa.models.Data;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-//package com.qa.repository;
-//
-//   import com.qa.models.Note;
-//   import org.springframework.data.jpa.repository.JpaRepository;
-//
-//public interface NoteRepository extends JpaRepository<Note, Long> {
-//
-//
-//}
+public interface PokerRepository extends JpaRepository<Data, Long> {
+}
