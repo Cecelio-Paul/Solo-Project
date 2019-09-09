@@ -12,10 +12,6 @@ public class Data {
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String Player_Name;
-    private String Player_Position;
-    private Integer Number_Of_BigBlinds;
-
 
     public Long getId() {
         return id;
@@ -26,27 +22,33 @@ public class Data {
     }
 
     public String getPlayer_Name() {
-        return Player_Name;
+        return player_Name;
     }
 
     public void setPlayer_Name(String player_Name) {
-        Player_Name = player_Name;
+        this.player_Name = player_Name;
     }
 
     public String getPlayer_Position() {
-        return Player_Position;
+        return player_Position;
     }
 
     public void setPlayer_Position(String player_Position) {
-        Player_Position = player_Position;
+        this.player_Position = player_Position;
     }
 
     public Integer getNumber_Of_BigBlinds() {
-        return Number_Of_BigBlinds;
+        return number_Of_BigBlinds;
     }
 
     public void setNumber_Of_BigBlinds(Integer number_Of_BigBlinds) {
-        Number_Of_BigBlinds = number_Of_BigBlinds;
+        this.number_Of_BigBlinds = number_Of_BigBlinds;
     }
+
+    private String player_Name;
+    private String player_Position;
+    private Integer number_Of_BigBlinds;
+
+
 }
 
